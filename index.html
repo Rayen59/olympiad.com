@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Nexus Labs - Soumission de Problèmes Mathématiques</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000080;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000080;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffdc00;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0000cd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            color: #ffdc00;
+            padding: 10px 20px;
+            background-color: #000080;
+            border-radius: 25px;
+        }
+
+        nav a.button {
+            background-color: #ff1493;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="file"],
+        form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #ff1493;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff69b4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000080;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quantum Nexus Labs Organisation</h1>
+    </header>
+    <nav>
+        <a href="#" class="active">Accueil</a>
+        <a href="index (2).html">Infos a propos de lolympiade </a>
+    </nav>
+    <div class="content">
+        <h2>Formulaire de Soumission de Problèmes Mathématiques</h2>
+        <p>Cette page est spécialisée pour les professeurs afin d'envoyer des photos des problèmes mathématiques. Les images et fichiers envoyés s'afficheront directement dans la boîte Gmail de rayenbouazizi336@gmail.com.</p>
+        <form action="mailto:rayenbouazizi336@gmail.com" method="post" enctype="multipart/form-data">
+            <label for="name">Nom et Prénom (obligatoire)</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="university">Nom de l'Université ou du Lycée</label>
+            <input type="text" id="university" name="university">
+
+            <label for="country">Pays de provenance</label>
+            <input type="text" id="country" name="country">
+
+            <label for="photo">Sélectionner une photo du problème (obligatoire)</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="solution-file">Télécharger la solution (obligatoire)</label>
+            <input type="file" id="solution-file" name="solution-file" accept=".pdf,.doc,.docx,.txt" required>
+
+            <label for="comments">Commentaires et idées (optionnel)</label>
+            <textarea id="comments" name="comments" rows="5"></textarea>
+
+            <label for="email">Gmail (obligatoire)</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Ce formulaire est spécialisé pour les professeurs afin de proposer des problèmes. Seuls les professeurs peuvent soumettre. Lors de la soumission de l'olympiade, le nom du professeur s'affichera sous les problèmes. L'olympiade aura lieu la semaine prochaine, le samedi et le dimanche. Le choix sera de 6 problèmes et l'envoi de la solution est obligatoire.</p>
+    </div>
+    <footer>
+        &copy; 2024 Quantum Nexus Labs Organisation
+    </footer>
+</body>
+</html>
